@@ -6,6 +6,9 @@
    padding: 0;
    /* overflow: hidden; */
 }
+body{
+   scroll-behavior: smooth;
+}
 
 nav{
    width: 100%;
@@ -14,7 +17,7 @@ nav{
    justify-content: space-evenly;
    align-items: center;
    flex-direction: row;
-   min-width: 100%;
+   max-width: 100%;
    height:80px ;
    position: sticky;
    top: 0;
@@ -51,7 +54,7 @@ nav .pages{
 .body-intro{
       width: 100%;
       height: 100vh;
-      background-image: url(/proj\ Image/homebg.jpeg);
+      background-image: url(./projImage/homebg.jpeg);
       background-size: cover; /* Entire image fits without cropping */
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Prevent repetition */
@@ -408,12 +411,7 @@ nav .pages{
 /* section 6 */
 
 
-.section6{
-   /* background-color: bisque; */
-}
-.section6-container{
-   /* padding: 40px; */
-}
+
 .pricing-container{
    width: 90%;
    margin: auto;
@@ -534,10 +532,6 @@ nav .pages{
 
 /* section7 */
 
-
-.section7{
-/*  */
-}
 .section7-container{
    padding: 40px;
 }
@@ -660,7 +654,7 @@ input{
 .Name{
    width: 50%;
    height: 40px;
-   border: 1px solid #ececec;
+   border: 1px solid #c1b9b9;
    color: #5b5a5a;
    border-radius: 3px;
    
@@ -668,7 +662,7 @@ input{
 .Email{
    width: 50%;
    height: 40px;
-   border: 1px solid #ececec;
+   border: 1px solid #c1b9b9;
    color: #5b5a5a;
    border-radius: 3px;
 
@@ -681,14 +675,14 @@ input{
 }
 .Subject{
    height: 40px;
-   border: 1px solid #ececec;
+   border: 1px solid #c1b9b9;
    color: #5b5a5a;
    border-radius: 3px;
 
 }
 .Message{
    height: 100px;
-   border: 1px solid #ececec;
+   border: 1px solid #c1b9b9;
    color: #5b5a5a;
    border-radius: 3px;
 
@@ -780,9 +774,6 @@ input{
 @media screen and (max-width: 600px) {
    *{
       font-size: 14px;
-   }
-   nav{   
-      
    }
    .pages {
       /* width: 50%; */
