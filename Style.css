@@ -832,7 +832,9 @@ input{
       display: flex;
       gap: 10px;
    }
-   
+   .aboutme .text{
+   padding: 10px;
+   }
    /* sect2 */
 .section2{
    display: block;
@@ -897,6 +899,10 @@ input{
    display: block ;
    gap: 15px;
 }
+.section3 .section h1,p{
+   text-align: center;
+}
+
 
 
 /* section5 */
@@ -929,6 +935,7 @@ input{
    display: flex;
    flex-direction: column;
    height: auto;
+   width: 100%;
    justify-content: flex-start;
    align-items: flex-start;
 }
@@ -940,6 +947,9 @@ input{
 }
 .sub-sub-contact1{
    display: flex;
+   width: 100%;
+}
+.contact2{
    width: 100%;
 }
 
@@ -980,6 +990,8 @@ input{
    .portfolio-intro {
       text-align: center;
       padding: 20px;
+
+
    }
 
    /* Section 1 - Intro */
