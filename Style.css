@@ -629,7 +629,7 @@ nav .pages{
    font-size: 17px;
    color: #777777;
 }
-.text>p{
+.text>p a{
    color: #898989;
    font-size: 15px;
 }
