@@ -767,28 +767,40 @@ input{
       font-size: 14px;
       box-sizing: border-box;
    }
-   .pages .page{
+   .pages .page {
       display: none;
-   }
-   .drop:focus .drop-cont{
+  }
+  
+  .drop {
       display: block;
-   }
-   .drop-cont{
+      position: relative;
+      cursor: pointer; /* Indicate it's interactive */
+      outline: none; /* Remove default focus outline */
+  }
+
+  /* Ensure .drop can be focused */
+.drop:focus .drop-cont {
+      display: block;
+  }
+
+.drop-cont {
       display: none;
       position: absolute;
       background-color: rgb(83, 75, 66);
       min-width: 150px;
       height: auto;
-      box-shadow: 0 4px 10px rgb(0,0 , 0,0.2);
+      box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
       border-radius: 3px;
       gap: 10px;
-   }
-   .drop .fa-bars{
+      padding: 10px;
+  }
+.drop .fa-bars {
       text-decoration: none;
       color: #e3e0dc;
-      display: inline-block;
+      display: inline-block;  
    }
-   .drop-cont p a{
+
+.drop-cont p a {
       font-family: 'Playfair Display';
       font-size: 18px;
       color: #e3e0dc;
@@ -796,11 +808,13 @@ input{
       width: 100%;
       outline: none;
       border-radius: 2px;
-   
-   }
-   .drop{
       display: block;
-   }
+      padding: 5px;
+  }
+  /* Close dropdown when clicking outside */
+  .drop:focus-within .drop-cont {
+      display: block;
+  }
    a .fa-bars{
       display: flex;
    }
