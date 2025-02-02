@@ -783,7 +783,7 @@ input{
       border-radius: 3px;
       gap: 10px;
    }
-   .drop a{
+   .drop .fa-bars{
       text-decoration: none;
       color: #e3e0dc;
       display: inline-block;
